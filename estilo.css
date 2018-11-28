@@ -6,9 +6,8 @@ html {
 }
 
 header {
-    text-align: center;
     background-color: darkslateblue;
-    padding: 15px 0;
+    padding: 15px 1em;
     color: white;
     min-width: 600px;
 }
