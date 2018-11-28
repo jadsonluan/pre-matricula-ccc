@@ -7,10 +7,10 @@ html {
 
 header {
     text-align: center;
-    width: 100%;
     background-color: darkslateblue;
     padding: 15px 0;
     color: white;
+    min-width: 600px;
 }
 
 main {
@@ -20,15 +20,16 @@ main {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(7, 1fr);
     grid-gap: 1em;
-    min-width: 600px;    
+    min-width: 600px;
     grid-auto-flow: column
 }
 
 div.disciplina {
     background-color: white;
     padding: 10px;
-    display: flexbox;
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 div.disciplina p { color: #252525; }
