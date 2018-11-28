@@ -1,0 +1,48 @@
+* { margin: 0; padding: 0; }
+
+html {
+    font-family: 'Century Gothic', sans-serif;
+    background-color: lightgrey;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    background-color: darkslateblue;
+    padding: 15px 0;
+    color: white;
+}
+
+main {
+    height: 400px;
+    margin: 1em;
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 1em;
+    min-width: 600px;    
+    grid-auto-flow: column
+}
+
+div.disciplina {
+    background-color: white;
+    padding: 10px;
+    min-height: 4em;
+    display: flexbox;
+    flex-direction: column;
+}
+
+div.disciplina p { color: #252525; }
+div.disciplina:hover { background-color: darkslateblue; transition-duration: 0.25s; }
+div.disciplina:hover p { color: white; transition-duration: 0.25s;  }
+div.disciplina:hover div.dados { color: white; transition-duration: 0.25s;  }
+
+div.disciplina div.dados {
+    font-size: 11px;
+    margin-top: 2px;
+    color: grey;
+    display: flex;
+    justify-content: space-between;
+}
+
