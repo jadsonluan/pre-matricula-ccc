@@ -14,7 +14,6 @@ header {
 }
 
 main {
-    height: 400px;
     margin: 1em;
     font-size: 12px;
     display: grid;
@@ -28,7 +27,6 @@ main {
 div.disciplina {
     background-color: white;
     padding: 10px;
-    min-height: 4em;
     display: flexbox;
     flex-direction: column;
 }
@@ -37,7 +35,6 @@ div.disciplina p { color: #252525; }
 div.disciplina:hover { background-color: darkslateblue; transition-duration: 0.25s; }
 div.disciplina:hover p { color: white; transition-duration: 0.25s;  }
 div.disciplina:hover div.dados { color: white; transition-duration: 0.25s;  }
-
 div.disciplina div.dados {
     font-size: 11px;
     margin-top: 2px;
@@ -45,4 +42,14 @@ div.disciplina div.dados {
     display: flex;
     justify-content: space-between;
 }
+
+div.marcada {
+    background-color: slateblue;
+    color: white;
+}
+
+div.marcada p { color: white; }
+div.marcada div.dados { color: white; }
+div.marcada:hover {}
+
 
